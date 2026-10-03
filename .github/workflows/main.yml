@@ -25,7 +25,7 @@ jobs:
 
     - name: Build Standalone EXE
       run: |
-        pyinstaller --noconfirm --clean --onefile --windowed --name "DoustanTransport" --add-data "assets;assets" app.py
+        pyinstaller --noconfirm --clean --onefile --windowed --name "DoustanTransport" app.py
 
     - name: Upload DoustanTransport EXE Artifact
       uses: actions/upload-artifact@v4
